@@ -15,42 +15,28 @@ Built for capsule wardrobe curation but works for any product discovery workflow
 
 ## Prerequisites
 
-1. **Amazon Associates account** with Creators API access (replaces the deprecated PA-API 5.0)
-2. **Creators API credentials**: credential ID, credential secret, and credential version from the Associates portal
-3. **Node.js 18+**
-4. **Amazon Creators API SDK**: download from the Associates portal and build it locally
-
-### Building the SDK
-
-```bash
-cd /path/to/creatorsapi-nodejs-sdk
-npm install
-npm run build
-```
+- **Node.js 18+**
+- **Amazon Associates account** with Creators API access (replaces the deprecated PA-API 5.0)
+- **Creators API credentials** from the Associates portal: credential ID, credential secret, and credential version
+- **Amazon Creators API Node.js SDK** downloaded from the [Creators API portal](https://affiliate-program.amazon.com/creatorsapi/docs/) (it's not on npm)
 
 ## Installation
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/OldGrowthHarbor/amazon-product-search-mcp
 cd amazon-product-search-mcp
 npm install
-```
 
-Then install the Amazon Creators API SDK. Download it from the [Amazon Associates Creators API portal](https://affiliate-program.amazon.com/creatorsapi/docs/), build it, and install it locally:
-
-```bash
-# Build the SDK (one-time, from wherever you downloaded it)
+# 2. Build the Amazon SDK (one-time, wherever you downloaded it)
 cd /path/to/creatorsapi-nodejs-sdk
 npm install && npm run build
 
-# Install it into this project
+# 3. Install the SDK into this project
 cd /path/to/amazon-product-search-mcp
 npm install /path/to/creatorsapi-nodejs-sdk --ignore-scripts
-```
 
-Finally, compile:
-
-```bash
+# 4. Compile
 npm run build
 ```
 
