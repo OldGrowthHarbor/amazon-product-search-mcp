@@ -31,7 +31,7 @@ npm run build
 ## Installation
 
 ```bash
-git clone https://github.com/johnsocp/amazon-product-search-mcp.git
+git clone https://github.com/OldGrowthHarbor/amazon-product-search-mcp
 cd amazon-product-search-mcp
 npm install
 ```
